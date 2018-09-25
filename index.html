@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-</head>
+<style href='./styles.css'></style>
 <body>
-    <p>quieres una lancha?</p>
-    <input type="text">
+
+<h3>Creación de factura</h3>
+
+<div>
+  <form>
+    <label for="clientName">Nombre del cliente:</label>
+    <input type="text" id="fname" name="clientName" placeholder="Nombre...">
+
+    <label for="cid">cedula</label>
+    <input type="text" id="cid" name="cid" placeholder="cedula...">
+
+    <label for="tipo">tipo</label>
+    <select id="tipo" name="tipo">
+      <option value="reparacion">reparacion</option>
+      <option value="mantenimiento">mantenimiento</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
 </body>
 </html>
